@@ -54,7 +54,7 @@
     "eslint-plugin-react-native": "^3.8.1",
     "flow-bin": "^0.123.0",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-native": "^0.62.2"
+    "react": "^16.11.0",
+    "react-native": "^0.61.5"
   }
 }
