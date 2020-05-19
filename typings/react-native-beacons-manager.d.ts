@@ -7,6 +7,11 @@ declare module 'react-native-beacons-manager' {
     major?: number
   }
 
+ class BeaconsEventEmitter {
+    addListener(string, Function): void;
+    removeListener(string, Function): void;
+  }
+
   export type AuthorizationStatus =
     | 'authorizedAlways'
     | 'authorizedWhenInUse'
@@ -15,6 +20,9 @@ declare module 'react-native-beacons-manager' {
     | 'restricted';
 
   class Beacons {
+
+    BeaconsEventEmitter: BeaconsEventEmitter;
+
     ///////////////////////////////////////////////////////
     // iOS only
     ///////////////////////////////////////////////////////
